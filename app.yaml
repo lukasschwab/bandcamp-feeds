@@ -1,0 +1,5 @@
+service: bandcamp-feeds
+runtime: python37
+handlers:
+  - url: .*
+    script: auto
