@@ -2,7 +2,7 @@ import jsonfeed_wrapper as jfw
 import jsonfeed as jf
 from bs4 import BeautifulSoup as bs
 
-BASE_URL_FORMAT = "https://{category}.bandcamp.com/"
+BASE_URL_FORMAT = "https://{category}.bandcamp.com/music"
 MAX_ITEMS = 20
 
 def toItem(page_item, request_url):
