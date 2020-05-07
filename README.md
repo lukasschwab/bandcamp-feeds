@@ -1,12 +1,12 @@
 # bandcamp-feeds
 
-`bandcamp-feeds` is a JSON Feed generator for [Bandcamp](https://bandcamp.com/) artist pages; it naïvely processes their HTML, so I expect it to break eventually.
+`bandcamp-feeds` is a JSON Feed generator for [Bandcamp](https://bandcamp.com/) artist and label pages; it naïvely processes their HTML, so I expect it to break eventually.
 
 ## Usage
 
-Because artist pages are hosted at *subdomains* of `bandcamp.com`, requests to `bandcamp-feeds` that don't specify an artist will yield a 500 Internal Server Error: requests to `https://.bandcamp.com` are invalid.
+Because artist pages are hosted at *subdomains* of `bandcamp.com`, requests to `bandcamp-feeds` that don't specify an artist or label will yield a 500 Internal Server Error: requests to `https://.bandcamp.com` are invalid.
 
-Instead, specify an artist page. For example: [`https://bandcamp-feeds-url.com/slift`](https://bandcamp-feeds-dot-arxiv-feeds.wl.r.appspot.com/slift).
+Instead, specify an artist or label page. For example: [`https://bandcamp-feeds-url.com/slift`](https://bandcamp-feeds-dot-arxiv-feeds.wl.r.appspot.com/slift).
 
 ## Resources
 
@@ -25,3 +25,7 @@ An example of the raw HTML structure being processed into an item:
   </a>
 </li>
 ```
+
+## To do
+
++ Support feeds for tags.
