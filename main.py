@@ -20,4 +20,9 @@ def page_to_items(page):
     page_items = soup.findAll("li", class_="music-grid-item")
     return [toItem(page_item, page.url) for page_item in page_items[:MAX_ITEMS]]
 
-app = jfw.initialize("Bandcamp", BASE_URL_FORMAT, page_to_items, MAX_ITEMS)
+wrapper = jfw.JSONFeedWrapper("Bandcamp", BASE_URL_FORMAT, page_to_items, MAX_ITEMS)
+
+# App for App Engine deployments.
+app = wrapper.as_bottle_app()
+# Target for Cloud Function deployments.
+target = wrapper.as_cloud_function()
