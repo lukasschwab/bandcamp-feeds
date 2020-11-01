@@ -6,12 +6,12 @@
 
 Because artist pages are hosted at *subdomains* of `bandcamp.com`, requests to `bandcamp-feeds` that don't specify an artist or label will yield a 500 Internal Server Error: requests to `https://.bandcamp.com` are invalid.
 
-Instead, specify an artist or label page. For example: [`https://bandcamp-feeds-url.com/slift`](https://bandcamp-feeds-dot-arxiv-feeds.wl.r.appspot.com/slift).
+Instead, specify an artist or label page. For example: [`https://bandcamp-feeds-url.com/slift`](https://us-central1-arxiv-feeds.cloudfunctions.net/bandcamp-feeds/slift).
 
 ## Resources
 
 + `bandcamp-feeds` is built with [`jsonfeed-wrapper`](https://github.com/lukasschwab/jsonfeed-wrapper) and [`jsonfeed`](https://github.com/lukasschwab/jsonfeed).
-+ [The feed is live here.](https://bandcamp-feeds-dot-arxiv-feeds.wl.r.appspot.com/) See [**Usage**](https://github.com/lukasschwab/bandcamp-feeds#usage) above.
++ [The feed is live here.](https://us-central1-arxiv-feeds.cloudfunctions.net/bandcamp-feeds) See [**Usage**](https://github.com/lukasschwab/bandcamp-feeds#usage) above.
 
 An example of the raw HTML structure being processed into an item:
 
