@@ -1,7 +1,7 @@
 # app.yaml contains deployment metadata for deploying this project with Google
 # App Engine.
 service: bandcamp-feeds
-runtime: python37
+runtime: python313
 handlers:
   - url: .*
     script: auto
